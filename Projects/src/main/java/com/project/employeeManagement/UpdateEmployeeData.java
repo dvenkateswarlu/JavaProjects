@@ -15,7 +15,7 @@ public class UpdateEmployeeData {
 		{
 			System.out.println("List the given Operations::");
 			System.out.println("\t1. Update Id \n\t2. Update Name \n\t3. Update Age \n\t4. Update Salary "
-					+ "\n\t5. Update More than One \n\t6. Exit from UpdateForm");
+					+ "\n\t5. Update More than One");
 			System.out.println("Enter which Column Data You what to Update");
 	
 			int choice = EmployeeManagement.scanner.nextInt();
@@ -36,7 +36,8 @@ public class UpdateEmployeeData {
 						statement.setInt(1, updateid);
 						statement.setInt(2, exstingid);
 						
-						execute = statement.execute(); // Execute the PreparedStatement
+						execute = statement.execute();// Execute the PreparedStatement
+						flag = false;
 					} catch (SQLException e) {
 						e.printStackTrace();
 					}
@@ -57,6 +58,7 @@ public class UpdateEmployeeData {
 						statement.setInt(2, exstingID);
 						
 						execute = statement.execute(); // Execute the PreparedStatement
+						flag = false;
 					} catch (SQLException e) {
 						e.printStackTrace();
 					}
@@ -77,6 +79,7 @@ public class UpdateEmployeeData {
 						statement.setInt(2, exstingid);
 						
 						execute = statement.execute();// Execute the PreparedStatement
+						flag = false;
 					} catch (SQLException e) {
 						e.printStackTrace();
 					}
@@ -97,6 +100,7 @@ public class UpdateEmployeeData {
 						statement.setInt(2, exstingid);
 						
 						execute = statement.execute(); // Execute the PreparedStatement
+						flag = false;
 					} catch (SQLException e) {
 						e.printStackTrace();
 					}
@@ -136,7 +140,8 @@ public class UpdateEmployeeData {
 								statement.setString(2,updatename);
 								statement.setInt(3, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -157,7 +162,8 @@ public class UpdateEmployeeData {
 								statement.setInt(2,updateAge);
 								statement.setInt(3, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -179,6 +185,7 @@ public class UpdateEmployeeData {
 								statement.setInt(3, exstingid);
 								
 								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -199,7 +206,8 @@ public class UpdateEmployeeData {
 								statement.setInt(2,updateAge);
 								statement.setInt(3, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -221,6 +229,7 @@ public class UpdateEmployeeData {
 								statement.setInt(3, exstingid);
 								
 								execute = statement.execute(); // Execute the PreparedStatement		
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -242,6 +251,7 @@ public class UpdateEmployeeData {
 								statement.setInt(3, exstingid);
 								
 								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -275,7 +285,8 @@ public class UpdateEmployeeData {
 								statement.setInt(3, updateAge);
 								statement.setInt(4, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -301,6 +312,7 @@ public class UpdateEmployeeData {
 								statement.setInt(4, exstingid);
 								
 								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -325,7 +337,8 @@ public class UpdateEmployeeData {
 								statement.setInt(3, updateId);
 								statement.setInt(4, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -350,7 +363,8 @@ public class UpdateEmployeeData {
 								statement.setDouble(3, updateSal);
 								statement.setInt(4, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -375,7 +389,8 @@ public class UpdateEmployeeData {
 								statement.setString(3, updateName);
 								statement.setInt(4, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -413,7 +428,8 @@ public class UpdateEmployeeData {
 								statement.setDouble(4, updateSal);
 								statement.setInt(5, exstingid);
 								
-								execute = statement.execute(); // Execute the PreparedStatement		
+								execute = statement.execute(); // Execute the PreparedStatement	
+								flag = false;
 							} catch (SQLException e) {
 								e.printStackTrace();
 							}
@@ -421,11 +437,6 @@ public class UpdateEmployeeData {
 					}			
 				}
 					break;
-				case 6:
-				{
-					flag =false;
-				}
-				break;
 			}		
 		}
 		return execute;
