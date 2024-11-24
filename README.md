@@ -46,7 +46,7 @@ CREATE TABLE employee (
 
 ## How to Run
 1. Clone the repository:
-   git clone https://github.com/your-username/employee-management-data.git
+   git clone [https://github.com/your-username/employee-management-data.git](https://github.com/dvenkateswarlu/JavaProjects.git)
    cd employee-management-data
 2. Compile the application
    javac *.java
